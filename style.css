@@ -1,0 +1,392 @@
+/* RESET STYLE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #efefef;
+    font-family: 'Helvetica';
+    text-decoration: none;
+    line-height: 1.4;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #151414;
+
+}
+
+.wrapper {
+    padding: 0 2.5vw;
+    margin: 0 auto;
+}
+
+button {
+    background-color: #efefef;
+    padding: 15px 30px;
+    border-radius: 30px;
+    color: #151414;
+    border: none;
+}
+
+button a {
+    background: none;
+    color: #151414;
+    font-size: 1vw;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* NAVIGATION */
+
+.nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    text-transform: uppercase;
+    font-size: 0.9vw;
+    font-weight: 600;
+
+}
+
+.nav_links {
+    display: flex;
+    gap: 2vw;
+}
+
+/* HERO SECTION */
+.hero_title h1 {
+    font-size: 10.417vw;
+    font-weight: 400;
+    line-height: 10.417vw;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
+.parent,
+.sheryelem span {
+    display: inline-block;
+    line-height: 10.417vw;
+}
+
+.who_am_i p {
+    font-size: 1vw;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.about span {
+    width: 6vw;
+    height: 3vw;
+    border-radius: 100px;
+    display: inline-block;
+    margin-bottom: -0.9vw;
+}
+
+.visimg {
+    width: 80px;
+    height: 40px;
+    background-image: url(images/bluegirl.jpg);
+    background-position: 0% 50%;
+    background-size: cover;
+}
+
+.webimg {
+    width: 100px;
+    height: 50px;
+    background-image: url(images/shaljam.jpg);
+    background-position: 0% 50%;
+    background-size: cover;
+}
+
+.hero_top {
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+    min-height: 90vh;
+    justify-content: center;
+}
+
+/* What I Do  */
+.what_i_do {
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+    grid-column-gap: 1.25em;
+}
+
+.about p {
+    font-size: 2vw;
+    line-height: 1.4;
+    margin-bottom: 1em;
+}
+
+.about {
+    width: 70%;
+}
+
+.social_links {
+    list-style: none;
+}
+
+.social_links li {
+    margin-bottom: 0.5em;
+
+}
+
+.social_links li:nth-of-type(1) {
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    opacity: .5;
+    border-bottom: 1px solid rgba(239, 239, 239, .1);
+}
+
+/* LATEST WORKS */
+.latest_works {
+    min-height: 100vh;
+    width: 100%;
+    padding: 6.25em 0;
+}
+
+.work_header {
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    grid-column-gap: 1.25em;
+    padding-bottom: 8em;
+}
+
+.works_para p {
+    font-size: 2vw;
+    text-align: right;
+}
+
+.projects_list {
+    display: grid;
+    grid-row-gap: 1.25em;
+}
+
+.project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    border-bottom: 3px solid #efefef;
+    overflow: hidden;
+    position: relative;
+    height: 10vh;
+}
+
+.project_title img {
+    position: relative;
+    z-index: 999;
+    transition: transform 0.3s, opacity 0.3s;
+    width: 4vw;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 1vw;
+    display: none;
+
+}
+
+.project_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    text-transform: none;
+    font-weight: 500;
+}
+
+.project_title h2 {
+    display: flex;
+    align-items: center;
+}
+
+.project_category {
+    text-align: end;
+}
+
+.project_category span {
+    font-weight: 700;
+}
+
+
+.work_footer {
+    padding-top: 3em;
+}
+
+
+/* HOW I WORK */
+
+.work_process {
+    min-height: 100vh;
+    width: 100%;
+    padding: 6.25em 0;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+.process {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 15px 30px;
+
+}
+
+.process_header,
+.service_header {
+    padding-bottom: 3em;
+}
+
+.process_heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+span .anim {
+    font-size: 5vw;
+    opacity: .2;
+    font-weight: 700;
+}
+
+
+/* Services */
+
+.services {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.cards {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+
+.card {
+    padding: 2em;
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #1565C0;
+    text-transform: uppercase;
+    font-size: 10vw;
+}
+
+
+.card,
+.spacer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.3);
+}
+
+
+
+.card:nth-child(odd) {
+    background: #303F9F;
+}
+
+.spacer {
+    font-size: 50px;
+    margin: 20px;
+}
+
+
+/* 
+/* cb-tagreel  Animation*/
+
+.cb-tagreel {
+    position: relative;
+}
+
+.cb-tagreel-content {
+    padding: 0;
+}
+
+.cb-tagreel-items {
+    margin: -58px 0;
+    overflow: hidden;
+    cursor: default;
+}
+
+.cb-tagreel-row {
+    display: flex;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.cb-tagreel-item {
+    position: relative;
+    line-height: 100%;
+    font-size: 3.75vw;
+    flex: 0 0 24%;
+    padding: 58px 0;
+    text-transform: uppercase;
+}
+
+.cb-tagreel-item .-stroke {
+    color: transparent;
+    text-shadow: none;
+    -webkit-text-stroke: 2px rgba(0, 0, 0, 0.2);
+}
+
+.cb-tagreel-item span {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+*/
+
+/* FOOTER STYLE */
+footer {
+    width: 100%;
+}
+
+.footer_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+}
+
+.footer_top h1 {
+    font-size: 8vw;
+    text-transform: uppercase;
+}
+
+.footer_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+}
