@@ -155,14 +155,18 @@ button a {
     padding: 6.25em 0;
 }
 
-.work_header {
+.work_header,
+.process_header,
+.service_header {
     display: grid;
     grid-template-columns: 4fr 8fr;
     grid-column-gap: 1.25em;
     padding-bottom: 8em;
 }
 
-.works_para p {
+.works_para p,
+.process_para p,
+.service_para p {
     font-size: 2vw;
     text-align: right;
 }
@@ -237,6 +241,7 @@ button a {
     justify-content: flex-start;
     align-items: center;
     gap: 1.5vw;
+    width: 200vw;
 }
 
 .process {
@@ -247,11 +252,6 @@ button a {
     border-radius: 10px;
     padding: 15px 30px;
 
-}
-
-.process_header,
-.service_header {
-    padding-bottom: 3em;
 }
 
 .process_heading {
@@ -276,37 +276,33 @@ span .anim {
 
 .cards {
     width: 100%;
-    height: 50vh;
+    height: 80vh;
     position: relative;
 }
 
 .card {
-    padding: 2em;
-    color: white;
     position: absolute;
     width: 100%;
-    height: 100%;
-    background: #1565C0;
-    text-transform: uppercase;
-    font-size: 10vw;
+    background: black;
+    padding: 1.3rem;
+    border-radius: 10px;
 }
 
-
-.card,
-.spacer {
+.s_headings,
+.s_last_content {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 50px;
-    text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.3);
+    justify-content: space-between;
+
 }
 
-
-
-.card:nth-child(odd) {
-    background: #303F9F;
+.s_m_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3.3rem;
 }
+
 
 .spacer {
     font-size: 50px;
