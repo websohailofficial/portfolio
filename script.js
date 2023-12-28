@@ -136,7 +136,7 @@ document.querySelectorAll(".project").forEach(function (project) {
   });
 });
 
-// // Work Process Animation
+// Work Process Animation
 function hrprocess() {
   const container = document.querySelector(".work_process");
   const contentSec = gsap.utils.toArray(".container .process");
@@ -148,12 +148,14 @@ function hrprocess() {
       scrollTrigger: {
         trigger: container,
         pin: true,
-        scrub: 1,
+        scrub: 0.9,
+        start: "top top", // Adjust the start property
         end: "+=3000",
       },
     });
   }
 }
+
 hrprocess();
 
 // Services
